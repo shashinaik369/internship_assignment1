@@ -35,14 +35,19 @@ class _MainPageState extends State<MainPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 buildButton(
-                  text: 'A',
-                  color: Colors.pink,
-                  onClicked: () => setState(() => isVisibleA = !isVisibleA),
-                ),
+                    text: 'A',
+                    color: Colors.pink,
+                    onClicked: () {
+                      setState(() {
+                        isVisibleA = !isVisibleA;
+                      });
+                    }),
                 buildButton(
                   text: 'B',
                   color: Colors.pink,
-                  onClicked: () => setState(() => isVisibleB = !isVisibleB),
+                  onClicked: () => setState(() {
+                    isVisibleB = !isVisibleB;
+                  }),
                 ),
               ],
             ),

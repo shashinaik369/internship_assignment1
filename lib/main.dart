@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:internship_assignment/animatedmainpage.dart';
 import 'package:internship_assignment/mainpage.dart';
 
 void main() => runApp(MyApp());
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(primarySwatch: Colors.green),
-        home: MainPage(title: title),
+        home: AnimatedMainPage(title: title),
       );
 }
